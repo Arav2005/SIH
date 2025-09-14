@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Assessment</title>
+</head>
+<body>
+    <h2>Farm Risk Assessment Form</h2>
+    <form method="POST">
+        Farmer Name: <input type="text" name="farmer_name" required><br><br>
+        Farm Type: 
+        <select name="farm_type">
+            <option value="Pig">Pig</option>
+            <option value="Poultry">Poultry</option>
+        </select><br><br>
+        Location: <input type="text" name="location" required><br><br>
+        Number of Animals: <input type="number" name="num_animals" required><br><br>
+
+        <h3>Biosecurity Checklist (Yes = 1, No = 0)</h3>
+        1. Do you restrict visitor entry to the farm? 
+        <input type="radio" name="q1" value="1">Yes 
+        <input type="radio" name="q1" value="0">No<br>
+
+        2. Do you provide clean feed and water daily? 
+        <input type="radio" name="q2" value="1">Yes 
+        <input type="radio" name="q2" value="0">No<br>
+
+        3. Do you vaccinate your animals regularly? 
+        <input type="radio" name="q3" value="1">Yes 
+        <input type="radio" name="q3" value="0">No<br>
+
+        4. Do you isolate sick animals from healthy ones? 
+        <input type="radio" name="q4" value="1">Yes 
+        <input type="radio" name="q4" value="0">No<br>
+
+        5. Do you disinfect housing areas weekly? 
+        <input type="radio" name="q5" value="1">Yes 
+        <input type="radio" name="q5" value="0">No<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
